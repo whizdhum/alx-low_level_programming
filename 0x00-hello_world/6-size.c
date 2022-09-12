@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - prints all single digi numbers of base 10 starting from 0,
- * followed by a new line, using putchar
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
 
-	for (n = 48; n < 58; n++)
-
-	{
-		putchar(n);
-	}
-	putchar('\n');
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 	return (0);
 }
